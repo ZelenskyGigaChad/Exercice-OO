@@ -1,0 +1,10 @@
+#Renaud Deschenes 401
+#Exercice 3
+from math import pi
+class Cercle:
+    def __init__(self, rayon):
+        self.rayon = rayon
+    def circonference(self):
+        return 2 * pi * self.rayon
+    def aire(self):
+        return pi * self.rayon ** 2
