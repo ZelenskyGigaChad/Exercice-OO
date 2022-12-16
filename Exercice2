@@ -4,8 +4,8 @@ class Rectangle:
     def __init__(self, longueur, largeur):
         self.longueur = longueur
         self.largeur = largeur
-    def aire(self):
+    def calcul_aire(self):
         return self.longueur * self.largeur
-    def afficher(self):
+    def afficher_infos(self):
         print("Longueur:", self.longueur, "Largeur:", self.largeur)
         print("Aire:", self.aire())
