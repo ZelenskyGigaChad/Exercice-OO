@@ -1,0 +1,17 @@
+#Renaud Deschenes 401
+#Exercice 4
+import random
+class Hero:
+    def __init__(self, nom):
+        self.name = nom
+        self.nombre_de_vie = random.randint(1, 10) + random.randint(1, 10)
+        self.force_attaque = random.randint(1, 6)
+        self.force_defense = random.randint(1, 6)
+    def attack(self):
+        return self.force_attaque + random.randint(1, 6)
+    def recevoir_dommage(self, dommage):
+        self.nombre_de_vie -= dommage
+
+    def est_vivant(self):
+        if self.nombre_de_vie > 0:
+            return True
